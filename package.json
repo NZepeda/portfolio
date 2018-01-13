@@ -1,0 +1,25 @@
+{
+  "name": "basenodereact",
+  "version": "1.0.0",
+  "description": "Base project for node apps using react",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "client": "npm run start --prefix client",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client \"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "author": "Nestor Zepeda",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "font-awesome": "^4.7.0",
+    "proptypes": "^1.1.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2"
+  }
+}

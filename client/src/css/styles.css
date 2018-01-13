@@ -1,0 +1,25 @@
+.profile-img {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+.navbar-text {
+    font-family: 'Source Code Pro', monospace;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.social-icon-footer {
+    color: white;
+}
+
+.header-section {
+    background-image: url('../images/code.jpg');
+    background-size: cover;
+}
+
+.body-text {
+    font-family: 'Roboto', sans-serif;
+}
