@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
 import Portfolio from './Portfolio';
-import Footer from './Footer-rd';
+import Footer from './Footer/Footer-rd';
 import About from './About';
 
 import 'font-awesome/css/font-awesome.min.css';
