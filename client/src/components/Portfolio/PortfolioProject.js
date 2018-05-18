@@ -2,20 +2,16 @@ import React, {Component} from 'react';
 import project from '../../images/project.jpg';
 
 class PortfolioProject extends Component {
-    constructor(props){
-        super(props);
-    }
     render(){
         return(
-            <div className="col-md-6 col-lg-4">
-                <a className="portfolio-item d-block mx-auto" onClick= {this.props.open}>
-                    <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                        <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                            <i className="fa fa-search-plus fa-3x"></i>
-                        </div>
+            <div className="col">
+                <div className="card" style={{width: '18rem'}}>
+                    <img className="card-img-top" src={this.props.image} alt="Card image cap"/>
+                    <div className="card-body">
+                        <h5 className="card-title">{this.props.title}</h5>
+                        <a className="btn btn-primary" onClick={this.props.open}>More Info</a>
                     </div>
-                    <img className="img-fluid" src={this.props.image} alt=""/>
-                </a>
+                </div>
             </div>
         )
     }

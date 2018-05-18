@@ -49,10 +49,7 @@ class Portfolio extends Component {
                     <h2 className="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                     <hr className="portfolio-dark mb-5"/>
                     <div className="row">
-                        <PortfolioProject open={this.handleOpenModal} image={analyzer}/>
-                        <PortfolioProject open={this.handleOpenModal}/>
-                        <PortfolioProject open={this.handleOpenModal}/>
-                        <PortfolioProject open={this.handleOpenModal}/>
+                        <PortfolioProject open={this.handleOpenModal} image={analyzer} title="Tweet Sentiment Analyzer"/>
                     </div>
                 </div>
             </section>
