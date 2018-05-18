@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
-import Portfolio from './Portfolio';
+import Portfolio from './Portfolio/Portfolio';
 import Footer from './Footer/Footer-rd';
 import About from './About';
 

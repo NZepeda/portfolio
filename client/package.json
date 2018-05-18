@@ -6,7 +6,8 @@
     "@axetroy/react-download": "^1.0.0",
     "proptypes": "^1.1.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-modal": "^3.4.4"
   },
   "devDependencies": {
     "react-scripts": "1.0.17"
