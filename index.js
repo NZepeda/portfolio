@@ -6,7 +6,6 @@ const PORT = process.env.PORT || 8000;
 
 app.use(express.static(__dirname));
 
-
 if(process.env.NODE_ENV){
     app.use(express.static('client/build'));
 
