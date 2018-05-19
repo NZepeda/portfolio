@@ -10,7 +10,7 @@ class Footer extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <img className="footer-icon" src={footericon} />
+                            <img className="footer-icon" src={footericon} alt="footer-icon"/>
                         </div>
                     </div>
                     <br/>

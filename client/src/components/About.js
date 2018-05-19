@@ -1,8 +1,35 @@
 import React, {Component} from 'react';
-import Download from '@axetroy/react-download';
-import Resume from '../assets/test.txt';
+import axios from 'axios';
 
 class About extends Component {
+    constructor(){
+        super();
+
+        this.downloadResume = this.downloadResume.bind(this);
+    }
+   async downloadResume(){
+        const response = await axios.get('/api/resume', {responseType: 'arraybuffer'});
+
+        const linkElement = document.createElement('a');
+            try{
+                const blob = new Blob([response.data], {type: "application/pdf"});
+                console.log(blob);
+                var url = window.URL.createObjectURL(blob);
+    
+                linkElement.setAttribute('href', url);
+                linkElement.setAttribute('download', "NestorResume.pdf");
+    
+                var clickEvent = new MouseEvent("click", {
+                    "view": window,
+                    "bubbles": true,
+                    "cancelable": false
+                });
+    
+                linkElement.dispatchEvent(clickEvent);
+            }catch(ex){
+                console.log(ex);
+            }
+    }
     render(){
         return(
             <section className="bg-primary text-white mb-0" id="about">
@@ -20,7 +47,7 @@ class About extends Component {
                     </div>
                     <div className="text-center mt-4">
                         <button className="btn btn-xl btn-outline-light">
-                            <i className="fa fa-download mr-2">&nbsp;<span className="body-text">Download Resume</span></i>
+                            <i className="fa fa-download mr-2" onClick={this.downloadResume}>&nbsp;<span className="body-text">Download Resume</span></i>
                         </button>
                     </div>
                 </div>

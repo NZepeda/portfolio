@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import PortfolioProject from './PortfolioProject';
 import ReactModal from 'react-modal';
 import ModalBody from '../Modal/ModalBody';
-import Equalizer from 'react-equalizer';
 import analyzer from '../../images/tweet-sentiment-analyzer.png';
 import platewatch from '../../images/platewatch.png';
 

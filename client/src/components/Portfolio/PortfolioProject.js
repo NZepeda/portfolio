@@ -5,7 +5,7 @@ class PortfolioProject extends Component {
         return(
             <div className="col">
                 <div className="card" style={{width: '100%'}}>
-                    <img className="card-img-top" src={this.props.image} alt="Project Image"/>
+                    <img className="card-img-top" src={this.props.image} alt="Project"/>
                     <div className="card-body">
                         <h5 className="card-title">{this.props.title}</h5>
                         <a id={this.props.id} className="btn btn-primary" onClick={this.props.open}>More Info</a>
